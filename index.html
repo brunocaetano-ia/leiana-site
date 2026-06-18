@@ -187,6 +187,16 @@
     padding:10px 24px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);
   }
 
+  /* R05 – serviços em breve */
+  .card.soon{opacity:.62;pointer-events:none}
+  .card.soon:hover{transform:none;box-shadow:0 16px 40px -26px rgba(44,54,84,.22)}
+  .badge-soon{
+    display:inline-block;margin-bottom:10px;
+    font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--ink-dim);border:1px solid rgba(122,126,147,.3);
+    border-radius:100px;padding:4px 12px;background:rgba(122,126,147,.07);
+  }
+
   .services .grouplbl{
     font-family:var(--serif);font-style:italic;font-size:20px;color:var(--rose-deep);
     margin:46px 0 18px;
@@ -248,9 +258,27 @@
   .q small{display:block;margin-top:16px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,236,226,.55)}
   .quotes .blob{filter:blur(90px)}
 
+  /* R09 – planos e valores */
+  .plans{background:linear-gradient(180deg,var(--blush),var(--cream))}
+  .form-cta{max-width:520px;margin:44px auto 0;display:grid;gap:14px}
+  .form-cta input,.form-cta select{
+    width:100%;padding:14px 20px;border:1px solid rgba(216,154,160,.4);
+    border-radius:14px;background:var(--white);font-family:var(--sans);
+    font-size:14.5px;color:var(--ink);outline:none;
+    transition:border-color .3s;-webkit-appearance:none;
+  }
+  .form-cta input::placeholder{color:var(--ink-dim)}
+  .form-cta input:focus,.form-cta select:focus{border-color:var(--rose-deep)}
+  .form-cta select{color:var(--ink-dim);cursor:pointer}
+  .form-cta .btn{width:100%;justify-content:center;cursor:pointer;font-family:var(--sans)}
+  .form-confirm{display:none;text-align:center;padding:44px 0}
+  .form-confirm .serif{font-size:22px;display:block;margin-bottom:14px;font-style:italic;font-family:var(--serif)}
+  .form-confirm p{font-size:15px;color:var(--ink-dim);margin-bottom:28px}
+
   .contact{text-align:center}
   .contact h2{font-size:clamp(32px,5vw,54px)}
   .contact p.lead{margin:20px auto 44px}
+  .contact .ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
   .socials{display:flex;justify-content:center;gap:14px;margin-top:52px}
   .soc{
     width:46px;height:46px;border-radius:50%;cursor:pointer;border:1px solid rgba(216,154,160,.45);
@@ -261,23 +289,11 @@
   .soc svg{width:19px;height:19px;fill:currentColor}
   .socials-note{margin-top:16px;font-size:12px;color:var(--ink-dim);letter-spacing:.05em}
 
-  .modal-bg{
-    position:fixed;inset:0;background:rgba(34,42,69,.55);backdrop-filter:blur(4px);
-    display:none;align-items:center;justify-content:center;z-index:100;padding:24px;
-  }
-  .modal-bg.on{display:flex}
-  .modal{
-    background:var(--cream);border-radius:26px;max-width:430px;width:100%;
-    padding:42px 36px;text-align:center;position:relative;
-    box-shadow:0 40px 90px -30px rgba(34,42,69,.6);
-  }
-  .modal .x{
-    position:absolute;top:14px;right:20px;background:none;border:none;font-size:22px;
-    color:var(--ink-dim);cursor:pointer;
-  }
-  .modal h3{font-family:var(--serif);font-size:26px;color:var(--navy);margin-bottom:14px}
-  .modal h3 em{font-style:italic;color:var(--rose-deep)}
-  .modal p{font-size:14.5px;color:var(--ink-dim);margin-bottom:26px}
+  /* R06 – onde atendo */
+  .atende{background:var(--white)}
+  .atende-body{max-width:780px;margin:0 auto;text-align:center}
+  .atende-body p{font-size:clamp(15px,1.8vw,17px);color:var(--ink-dim);line-height:1.9}
+  .atende-body strong{color:var(--navy);font-weight:400}
 
   .float-wa{
     position:fixed;right:22px;bottom:22px;z-index:90;
@@ -359,6 +375,7 @@
     <a href="#cuidados">Cuidados</a>
     <a href="#dicas">Dicas</a>
     <a href="#depoimentos">Depoimentos</a>
+    <a href="#planos">Planos</a>
     <a href="#contato">Contato</a>
   </div>
   <a class="btn ghost" style="padding:10px 20px;font-size:10.5px" href="#contato">Agendar</a>
@@ -374,7 +391,8 @@
         <h1 class="reveal d1">Cada fase importa.<br><em>Cada detalhe transforma.</em></h1>
         <p class="lead reveal d2">Sou a Leiana. Há mais de 12 anos cuido de pessoas nos momentos mais delicados da vida: a recuperação de uma cirurgia e a chegada de um bebê. Se você está com medo de complicações ou sem saber se o seu pós está normal, eu conduzo o seu cuidado com segurança e leveza.</p>
         <div class="ctas reveal d3">
-          <a class="btn" href="#" data-wa="Olá, Leiana! Vim pelo seu site e quero agendar uma avaliação.">
+          <!-- R01: link real de WhatsApp -->
+          <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20pelo%20seu%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." data-wa="Olá, Leiana! Vim pelo seu site e quero agendar uma avaliação.">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.4Z"/></svg>
             Agendar pelo WhatsApp
           </a>
@@ -433,7 +451,8 @@
             <div><b>Pós-graduação em Docência do Ensino Superior</b><span>IBEP</span></div>
           </div>
         </div>
-        <div class="coren reveal d3">Registro profissional · COREN-DF Nº XXXXX-ENF</div>
+        <!-- CONFIRMAR FORMATO COM A CARTEIRINHA REAL DO COREN ANTES DE PUBLICAR -->
+        <div class="coren reveal d3">Registro profissional · COREN-DF Nº 354-413-ENF</div>
       </div>
     </div>
   </div>
@@ -470,19 +489,23 @@
       </div>
     </div>
 
+    <!-- R05: os 3 serviços abaixo ainda não estão em atendimento ativo -->
     <div class="grouplbl reveal">Cuidados especiais</div>
     <div class="cards g3">
-      <div class="card reveal d1">
+      <div class="card soon reveal d1">
+        <span class="badge-soon">Em breve</span>
         <span class="mini">estética</span>
         <h3>Estética avançada, humana e segura</h3>
         <p>Procedimentos estéticos com responsabilidade clínica e olhar de quem entende de pele, cicatriz e saúde.</p>
       </div>
-      <div class="card reveal d2">
+      <div class="card soon reveal d2">
+        <span class="badge-soon">Em breve</span>
         <span class="mini">delicadeza</span>
         <h3>Furo de orelha humanizado</h3>
         <p>Para bebês, crianças e adultos: técnica segura, ambiente tranquilo e zero pressa. Um momento delicado tratado com a delicadeza que merece.</p>
       </div>
-      <div class="card reveal d3">
+      <div class="card soon reveal d3">
+        <span class="badge-soon">Em breve</span>
         <span class="mini">especializado</span>
         <h3>Consultoria em cuidados oncológicos</h3>
         <p>Orientação especializada de enfermagem para pacientes e famílias que atravessam o tratamento oncológico.</p>
@@ -535,6 +558,18 @@
         <h3>Quando devo chamar uma enfermeira em casa?</h3>
         <p>Se há curativo para trocar, dreno para cuidar, dúvida sobre a evolução ou simplesmente insegurança: esse já é o momento. Cuidado preventivo evita complicação.</p>
       </div>
+      <!-- R08a: laserterapia e kinesio taping explicados -->
+      <div class="tip reveal d1">
+        <span class="lbl">laserterapia · taping</span>
+        <h3>Laserterapia e Kinesio Taping: o que são e por que uso os dois?</h3>
+        <p>A laserterapia usa luz de baixa intensidade para reduzir inflamação, aliviar desconforto e estimular a reorganização da pele — sem calor excessivo e sem corte. O Kinesio Taping são bandagens elásticas aplicadas de forma estratégica para sustentar a região, reduzir edema e melhorar a circulação local. Uso os dois porque se complementam: o laser age na célula, o tape age na função. Juntos, tornam a recuperação mais confortável e mais previsível.</p>
+      </div>
+      <!-- R08b: ferida normal vs. sinal de alerta -->
+      <div class="tip reveal d2">
+        <span class="lbl">sinais de alerta</span>
+        <h3>A minha ferida está dentro do esperado — ou preciso chamar a enfermeira agora?</h3>
+        <p>Normal: leve vermelhidão nas bordas nos primeiros dias, pequena secreção clara ou rosada, sensação de tensão e coceira enquanto a pele se reorganiza. Atenção imediata: calor intenso na região, secreção purulenta ou com odor, febre acima de 37,8 °C, bordas se abrindo ou inchaço progressivo. Na dúvida, mande uma foto antes de se preocupar — é exatamente para isso que estou aqui.</p>
+      </div>
     </div>
 
     <p class="more reveal">Conteúdo novo toda semana no <a href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=previa&utm_content=dicas" target="_blank" rel="noopener" data-track="ig_dicas_click">@enf.leiana</a></p>
@@ -547,27 +582,61 @@
     <div class="eyebrow reveal">Depoimentos</div>
     <h2 class="reveal d1">Quem já passou por isso<br><em>conta melhor do que eu.</em></h2>
 
-    <div class="qgrid">
-      <div class="q reveal d1">
+    <!-- R07: se DEPOIMENTOS_IG[i] tiver URL, o JS substitui o .q pelo embed oficial -->
+    <div class="qgrid" id="qgrid">
+      <div class="q reveal d1" data-ig-slot="0">
         <div class="stars">★★★★★</div>
         <p>"A melhor enfermeira do mundo! Amei a dedicação, competência e carinho no atendimento e no pós."</p>
         <small>Paciente · pós-operatório</small>
       </div>
-      <div class="q reveal d2">
+      <div class="q reveal d2" data-ig-slot="1">
         <div class="stars">★★★★★</div>
         <p>"Excelente profissional, salvou meu pós-operatório. Minha cicatrização evoluiu bem melhor após o acompanhamento da enfermeira Leiana."</p>
         <small>Paciente · cicatrização</small>
       </div>
-      <div class="q reveal d2">
+      <div class="q reveal d2" data-ig-slot="2">
         <div class="stars">★★★★★</div>
         <p>"Leiana é ótima, cuidou de mim no pós-parto e quando tive mastite. Sempre muito cuidadosa e atenciosa."</p>
         <small>Paciente · pós-parto</small>
       </div>
-      <div class="q reveal d3">
+      <div class="q reveal d3" data-ig-slot="3">
         <div class="stars">★★★★★</div>
         <p>"Foi muito importante o acompanhamento da Leiana com a laserterapia para a boa cicatrização do meu pós-operatório."</p>
         <small>Paciente · laserterapia</small>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- R09: planos e valores -->
+<section class="plans" id="planos">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow reveal">Planos e valores</div>
+    <h2 class="reveal d1">Conheça os planos<br><em>e valores.</em></h2>
+    <p class="lead reveal d2" style="margin:0 auto">Preencha o formulário e receba as informações diretamente no seu e-mail. Sem compromisso — só para você ter tudo em mãos com calma.</p>
+
+    <form id="formPlanos" class="form-cta reveal d3" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <input type="hidden" name="access_key" id="w3fKey">
+      <input type="hidden" name="subject" value="Novo contato pelo site — Planos e valores">
+      <input type="hidden" name="from_name" value="Site Leiana Rodrigues">
+      <input type="hidden" name="replyto" value="leiana.rod.enf@gmail.com">
+      <input type="text"  name="nome"     placeholder="Seu nome completo" required autocomplete="name">
+      <input type="tel"   name="whatsapp" placeholder="Seu WhatsApp (com DDD)" required autocomplete="tel">
+      <input type="email" name="email"    placeholder="Seu melhor e-mail" required autocomplete="email">
+      <select name="servico" required>
+        <option value="">Qual cuidado você precisa?</option>
+        <option value="Pós-operatório e curativos avançados">Pós-operatório e curativos avançados</option>
+        <option value="Acompanhamento no puerpério (pós-parto)">Acompanhamento no puerpério (pós-parto)</option>
+        <option value="Laserterapia">Laserterapia</option>
+        <option value="Kinesio Taping">Kinesio Taping</option>
+      </select>
+      <button type="submit" class="btn">Quero conhecer os planos</button>
+    </form>
+
+    <div class="form-confirm" id="formConfirm">
+      <span class="serif">Recebido com carinho.</span>
+      <p>As informações foram para o seu e-mail. Se preferir continuar pelo WhatsApp, é só me chamar — fico feliz em ajudar a encontrar o cuidado certo para o seu momento.</p>
+      <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Enviei%20o%20formul%C3%A1rio%20e%20quero%20continuar%20pelo%20WhatsApp." data-wa="Olá, Leiana! Enviei o formulário e quero continuar pelo WhatsApp.">Falar com a Leiana</a>
     </div>
   </div>
 </section>
@@ -578,75 +647,83 @@
     <div class="eyebrow reveal">Contato</div>
     <h2 class="reveal d1">Você não precisa atravessar<br><em>essa fase sozinha.</em></h2>
     <p class="lead reveal d2" style="margin-left:auto;margin-right:auto">Me chama no WhatsApp, me conta como você está, e a gente decide juntas o melhor cuidado para o seu momento.</p>
-    <div class="reveal d3">
-      <a class="btn" href="#" data-wa="Olá, Leiana! Vim pelo seu site e quero conversar sobre o meu momento.">
+    <!-- R10: dois botões de ação -->
+    <div class="ctas reveal d3">
+      <!-- R01: link real de WhatsApp -->
+      <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20pelo%20seu%20site%20e%20quero%20conversar%20sobre%20o%20meu%20momento." data-wa="Olá, Leiana! Vim pelo seu site e quero conversar sobre o meu momento.">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.4Z"/></svg>
         Conversar com a Leiana
+      </a>
+      <!-- R10: agenda — colar link do Google Calendar abaixo -->
+      <!-- COLAR LINK DA AGENDA DE COMPROMISSOS DO GOOGLE CALENDAR -->
+      <a class="btn ghost" href="COLAR_LINK_AGENDA_AQUI" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Agendar na agenda
       </a>
     </div>
 
     <div class="socials reveal d3">
+      <!-- R04: mantido apenas Instagram -->
       <a class="soc" href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=previa&utm_content=contato" target="_blank" rel="noopener" aria-label="Instagram" data-track="ig_contato_click">
         <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4 1.2-.1 1.6-.1 4.8-.1Zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a5 5 0 1 1 0 9.9 5 5 0 0 1 0-9.9Zm0 8.1a3.2 3.2 0 1 0 0-6.3 3.2 3.2 0 0 0 0 6.3Zm6.3-8.3a1.2 1.2 0 1 1-2.3 0 1.2 1.2 0 0 1 2.3 0Z"/></svg>
       </a>
-      <button class="soc" data-rede="Facebook" aria-label="Facebook">
-        <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
-      </button>
-      <button class="soc" data-rede="YouTube" aria-label="YouTube">
-        <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.2C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12c0 1.9.2 3.9.5 5.8a3 3 0 0 0 2.1 2.2c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.2c.3-1.9.5-3.9.5-5.8 0-1.9-.2-3.9-.5-5.8ZM9.5 15.6V8.4L15.8 12l-6.3 3.6Z"/></svg>
-      </button>
-      <button class="soc" data-rede="TikTok" aria-label="TikTok">
-        <svg viewBox="0 0 24 24"><path d="M16.6 2h-3.3v13.7a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.5a6.3 6.3 0 1 0 5.3 6.2V8.6a7.7 7.7 0 0 0 4.5 1.4V6.7a4.5 4.5 0 0 1-4.5-4.5V2Z"/></svg>
-      </button>
     </div>
     <p class="socials-note">Acompanhe a Leiana onde for melhor para você.</p>
   </div>
 </section>
 
-<div class="modal-bg" id="modalRede">
-  <div class="modal">
-    <button class="x" onclick="fecharModal()">×</button>
-    <h3>Esse canal ainda <em>não existe...</em></h3>
-    <p id="modalTxt">E se existisse?</p>
-    <a class="btn" id="modalCta" href="#" target="_blank" rel="noopener">Quero saber como</a>
-  </div>
-</div>
-
-<a class="float-wa" href="#" data-wa="Olá, Leiana! Vim pelo seu site." aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.4Z"/></svg>
-</a>
-
-<section style="padding:90px 0;text-align:center;background:linear-gradient(165deg,var(--blush),var(--cream) 70%)" id="presente">
+<!-- R06: onde atendo -->
+<section class="atende" id="onde-atendo">
   <div class="wrap">
-    <div class="eyebrow reveal" style="text-align:center">Espere... tem mais</div>
-    <h2 class="reveal d1">Tem um presente<br><em>esperando por você.</em></h2>
-    <p class="lead reveal d2" style="margin:18px auto 38px;text-align:center">Mas presente bom não se abre com pressa. Veja a página inteira primeiro.</p>
-    <div class="reveal d3">
-      <button class="btn" id="btnAbrirPresente" type="button">🎁 Abrir meu presente</button>
+    <div class="eyebrow reveal" style="text-align:center">Onde atendo</div>
+    <h2 class="reveal d1" style="text-align:center">Brasília e <em>todo o entorno.</em></h2>
+    <div class="atende-body reveal d2">
+      <p>Atendo em todo o Distrito Federal: <strong>Brasília</strong> — Asa Sul, Asa Norte, Lago Sul, Sudoeste, Noroeste e Cruzeiro —, além de <strong>Guará, Águas Claras, Vicente Pires, Taguatinga, Samambaia, Ceilândia, Riacho Fundo, Núcleo Bandeirante, Candangolândia, Park Way, Gama, Santa Maria, Recanto das Emas</strong>, e também <strong>Valparaíso de Goiás</strong> e <strong>Novo Gama</strong>.</p>
+      <p style="margin-top:20px">Atendimentos em domicílio, maternidades, hospitais e consultórios parceiros, mediante agendamento prévio.</p>
     </div>
   </div>
 </section>
 
-<div id="aviso" style="position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);z-index:95;background:var(--navy-deep);color:var(--cream);padding:14px 24px;border-radius:100px;font-size:13px;letter-spacing:.04em;box-shadow:0 18px 50px -14px rgba(34,42,69,.6);opacity:0;pointer-events:none;transition:opacity .4s,transform .4s;max-width:88vw;text-align:center">
-  Só pode abrir o presente quando ver a página até o final! 🎀
-</div>
+<!-- R01: link real de WhatsApp no botão flutuante -->
+<a class="float-wa" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20pelo%20seu%20site." data-wa="Olá, Leiana! Vim pelo seu site." aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.4Z"/></svg>
+</a>
 
 <footer id="fim">
   <span class="serif">Cada fase importa. Cada detalhe transforma.</span>
   Leiana Rodrigues · Enfermagem pós-operatória, pós-parto e cuidados especiais · Brasília DF
-  <br><span class="reg">COREN-DF Nº XXXXX-ENF</span><br>
+  <!-- CONFIRMAR FORMATO COM A CARTEIRINHA REAL DO COREN ANTES DE PUBLICAR -->
+  <br><span class="reg">COREN-DF Nº 354-413-ENF</span><br>
   <a href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=previa&utm_content=footer" target="_blank" rel="noopener" style="color:var(--rose);text-decoration:none" data-track="ig_footer_click">@enf.leiana</a>
   <div class="credit">Site criado por <a href="https://wa.me/5561998461172?text=Ol%C3%A1%2C%20Bruno!%20Vi%20o%20site%20da%20Leiana%20e%20quero%20um%20assim.">Bruno Caetano | Marketing Sob Medida</a> · (61) 99846-1172</div>
 </footer>
 
 <script>
+/* ============================================================
+   CONFIGURAÇÃO — edite só este bloco
+   ============================================================ */
+
+/* R09 – Web3Forms: gere a sua chave em web3forms.com e cole abaixo */
+const WEB3FORMS_KEY = "COLAR_ACCESS_KEY_AQUI";
+
+/* R07 – Instagram: cole a URL de cada post/reel nos slots abaixo.
+   Deixe "" para exibir o depoimento em texto como fallback.
+   Exemplo: "https://www.instagram.com/p/XXXXXXXX/" */
+var DEPOIMENTOS_IG = [
+  "", /* slot 0 – pós-operatório   */
+  "", /* slot 1 – cicatrização     */
+  "", /* slot 2 – pós-parto        */
+  ""  /* slot 3 – laserterapia     */
+];
+
+/* ============================================================
+   LÓGICA DO SITE — não é necessário editar abaixo desta linha
+   ============================================================ */
 (function(){
   "use strict";
-  /* === CONFIGURAR: WhatsApp da Leiana (DDI+DDD+numero, só dígitos) === */
   var WHATS_LEIANA = "5561995289852";
-  var WHATS_BRUNO  = "5561998461172";
 
-  /* === CAMADA DE TRACKING (pronta para GTM/GA4: tudo cai no dataLayer) === */
+  /* === TRACKING (dataLayer pronto para GTM/GA4) === */
   window.dataLayer = window.dataLayer || [];
   function track(ev,label){
     window.dataLayer.push({event:ev,label:label,page:location.pathname,ts:new Date().toISOString()});
@@ -655,6 +732,7 @@
     el.addEventListener("click",function(){ track("outbound_click",el.getAttribute("data-track")); });
   });
 
+  /* R01: WA click — mantém tracking e abre com mensagem pré-preenchida */
   document.querySelectorAll("[data-wa]").forEach(function(a){
     a.addEventListener("click",function(ev){
       ev.preventDefault();
@@ -663,11 +741,13 @@
     });
   });
 
+  /* Reveal on scroll */
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
   },{threshold:.12});
   document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
 
+  /* Burger menu */
   var burger=document.getElementById("burger"), links=document.getElementById("navlinks");
   if(burger){
     burger.addEventListener("click",function(){ links.classList.toggle("open"); });
@@ -676,43 +756,63 @@
     });
   }
 
-  window.fecharModal = function(){ document.getElementById("modalRede").classList.remove("on"); };
-  document.querySelectorAll(".soc[data-rede]").forEach(function(b){
-    b.addEventListener("click",function(){
-      var rede=b.getAttribute("data-rede");
-      document.getElementById("modalTxt").innerHTML =
-        "O seu <strong>"+rede+"</strong> ainda não existe. E se existisse? Imagine o seu cuidado chegando a milhares de pessoas que precisam exatamente do que você sabe fazer. A gente constrói esse canal para você, com a sua cara, sem você precisar virar marketeira.";
-      document.getElementById("modalCta").href =
-        "https://wa.me/"+WHATS_BRUNO+"?text="+encodeURIComponent("Olá, Bruno! Quero saber como criar meu "+rede+" profissional.");
-      document.getElementById("modalRede").classList.add("on");
-    });
-  });
-  document.getElementById("modalRede").addEventListener("click",function(e){
-    if(e.target===this) fecharModal();
-  });
-
-  /* presente: só abre depois de ver a página até o final */
-  var fimVisto=false;
-  var fim=document.getElementById("fim");
-  if(fim){
-    new IntersectionObserver(function(es,obs){
-      es.forEach(function(e){ if(e.isIntersecting){ fimVisto=true; obs.disconnect(); } });
-    },{threshold:.3}).observe(fim);
-  }
-  var bp=document.getElementById("btnAbrirPresente");
-  if(bp){
-    bp.addEventListener("click",function(){
-      if(fimVisto){
-        track("presente_aberto","gate_ok");
-        location.href="invite/";
-      } else {
-        track("presente_bloqueado","gate");
-        var av=document.getElementById("aviso");
-        av.style.opacity="1"; av.style.transform="translateX(-50%) translateY(0)";
-        setTimeout(function(){ av.style.opacity="0"; av.style.transform="translateX(-50%) translateY(20px)"; },3200);
+  /* R07: Instagram embed swap — se slot tiver URL, substitui card de texto */
+  (function(){
+    var hasEmbed = false;
+    document.querySelectorAll("[data-ig-slot]").forEach(function(card){
+      var idx = parseInt(card.getAttribute("data-ig-slot"), 10);
+      var url = DEPOIMENTOS_IG[idx];
+      if(url){
+        var bq = document.createElement("blockquote");
+        bq.className = "instagram-media";
+        bq.setAttribute("data-instgrm-permalink", url);
+        bq.setAttribute("data-instgrm-version", "14");
+        bq.style.cssText = "background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,.5),0 1px 10px 0 rgba(0,0,0,.15);margin:1px;max-width:540px;min-width:326px;padding:0;width:calc(100% - 2px)";
+        card.parentNode.replaceChild(bq, card);
+        hasEmbed = true;
       }
     });
-  }
+    if(hasEmbed){
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "//www.instagram.com/embed.js";
+      document.body.appendChild(s);
+    }
+  })();
+
+  /* R09: Web3Forms — envio AJAX com confirmação inline */
+  (function(){
+    var keyInput = document.getElementById("w3fKey");
+    if(keyInput) keyInput.value = WEB3FORMS_KEY;
+    var form = document.getElementById("formPlanos");
+    var confirm = document.getElementById("formConfirm");
+    if(!form) return;
+    form.addEventListener("submit", function(ev){
+      ev.preventDefault();
+      var btn = form.querySelector("button[type=submit]");
+      btn.disabled = true;
+      btn.textContent = "Enviando…";
+      fetch("https://api.web3forms.com/submit", {method:"POST", body:new FormData(form)})
+        .then(function(r){ return r.json(); })
+        .then(function(res){
+          if(res.success){
+            form.style.display = "none";
+            if(confirm) confirm.style.display = "block";
+            track("form_planos_enviado","sucesso");
+          } else {
+            btn.disabled = false;
+            btn.textContent = "Quero conhecer os planos";
+            alert("Não foi possível enviar. Tente novamente ou entre em contato pelo WhatsApp.");
+          }
+        })
+        .catch(function(){
+          btn.disabled = false;
+          btn.textContent = "Quero conhecer os planos";
+          alert("Erro de conexão. Tente novamente.");
+        });
+    });
+  })();
+
 })();
 </script>
 </body>
