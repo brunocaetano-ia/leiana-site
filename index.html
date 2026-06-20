@@ -129,13 +129,6 @@
   .hero h1 em{font-style:italic;color:var(--rose-deep)}
   .hero p.lead{margin-bottom:38px}
   .hero .ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-  .brand-signature{
-    display:inline-flex;align-items:center;justify-content:center;margin:0 0 30px;
-    color:var(--navy);text-decoration:none;
-    max-width:min(340px,92vw);border-radius:18px;overflow:hidden;
-    background:rgba(44,54,84,.08);box-shadow:0 14px 34px -24px rgba(44,54,84,.38);
-  }
-  .brand-signature img{display:block;width:100%;height:auto}
   .hero-media{position:relative;z-index:2}
   .arch{
     position:relative;width:min(420px,100%);margin:0 auto;
@@ -249,14 +242,43 @@
   }
   .band span{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose)}
 
-  .tips{background:linear-gradient(180deg,var(--blush),var(--cream))}
+  .tips{
+    background:
+      radial-gradient(circle at 14% 18%,rgba(216,154,160,.18),transparent 28%),
+      radial-gradient(circle at 86% 10%,rgba(194,160,94,.13),transparent 26%),
+      linear-gradient(180deg,var(--blush),var(--cream) 62%,#FFF9F4);
+  }
   .tipgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:54px}
   .tip{
-    background:var(--white);border-radius:22px;padding:30px 28px;
+    background:
+      linear-gradient(145deg,rgba(255,255,255,.96),rgba(251,245,238,.82));
+    border-radius:22px;padding:30px 28px;
     border:1px solid rgba(216,154,160,.25);
     box-shadow:0 16px 40px -26px rgba(44,54,84,.2);
-    color:inherit;text-decoration:none;display:block;
+    color:inherit;text-decoration:none;display:block;position:relative;overflow:hidden;
   }
+  .tip::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.52;
+    background:
+      linear-gradient(135deg,rgba(216,154,160,.10),transparent 46%),
+      radial-gradient(circle at 100% 0,rgba(194,160,94,.12),transparent 34%);
+  }
+  .tip::after{
+    content:"";position:absolute;right:-34px;bottom:-34px;width:112px;height:112px;border-radius:50%;
+    background:radial-gradient(circle,rgba(235,160,131,.16),transparent 68%);
+    pointer-events:none;
+  }
+  .tip:nth-child(2n){
+    background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(246,227,221,.70));
+  }
+  .tip:nth-child(3n){
+    background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(244,236,226,.88));
+    border-color:rgba(194,160,94,.24);
+  }
+  .tip:nth-child(4n){
+    background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(235,160,131,.16));
+  }
+  .tip>*{position:relative;z-index:1}
   a.tip{transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s}
   a.tip:hover{transform:translateY(-2px);box-shadow:0 20px 46px -26px rgba(44,54,84,.34)}
   .tip h3{font-size:19px;color:var(--navy);margin-bottom:10px;line-height:1.35}
@@ -443,9 +465,6 @@
         <div class="eyebrow reveal">Enfermagem pós-operatória e pós-parto · Brasília</div>
         <h1 class="reveal d1">Cada fase importa.<br><em>Cada detalhe transforma.</em></h1>
         <p class="lead reveal d2">Sou a Leiana. Há mais de 12 anos cuido de pessoas nos momentos mais delicados da vida: a recuperação de uma cirurgia e a chegada de um bebê. Se você está com medo de complicações ou sem saber se o seu pós está normal, eu conduzo o seu cuidado com segurança e leveza.</p>
-        <a class="brand-signature reveal d2" href="#contato" aria-label="Leiana Rodrigues, enfermeira">
-          <img src="assets/leiana-assinatura.jpg" alt="Enfª Leiana Rodrigues · Laserterapia, Pós Operatório e Pós Parto" width="420" height="165" loading="eager">
-        </a>
         <div class="ctas reveal d3">
           <!-- R01: link real de WhatsApp -->
           <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20do%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." data-wa="Olá, Leiana! Vim do site e quero agendar uma avaliação.">
@@ -717,6 +736,8 @@
         <option value="Acompanhamento no puerpério (pós-parto)">Acompanhamento no puerpério (pós-parto)</option>
         <option value="Laserterapia">Laserterapia</option>
         <option value="Kinesio Taping">Kinesio Taping</option>
+        <option value="Mais de um cuidado">Mais de um</option>
+        <option value="Ainda tenho dúvidas">Ainda tenho dúvidas</option>
       </select>
       <button type="submit" class="btn">Continuar pelo WhatsApp</button>
     </form>
