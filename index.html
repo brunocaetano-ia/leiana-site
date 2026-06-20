@@ -130,16 +130,12 @@
   .hero p.lead{margin-bottom:38px}
   .hero .ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   .brand-signature{
-    display:inline-flex;flex-direction:column;gap:2px;margin:0 0 30px;
+    display:inline-flex;align-items:center;justify-content:center;margin:0 0 30px;
     color:var(--navy);text-decoration:none;
+    max-width:min(340px,92vw);border-radius:18px;overflow:hidden;
+    background:rgba(44,54,84,.08);box-shadow:0 14px 34px -24px rgba(44,54,84,.38);
   }
-  .brand-signature .name{
-    font-family:var(--serif);font-size:clamp(30px,4vw,42px);font-style:italic;
-    color:var(--rose-deep);line-height:1;
-  }
-  .brand-signature .role{
-    font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);
-  }
+  .brand-signature img{display:block;width:100%;height:auto}
   .hero-media{position:relative;z-index:2}
   .arch{
     position:relative;width:min(420px,100%);margin:0 auto;
@@ -448,12 +444,11 @@
         <h1 class="reveal d1">Cada fase importa.<br><em>Cada detalhe transforma.</em></h1>
         <p class="lead reveal d2">Sou a Leiana. Há mais de 12 anos cuido de pessoas nos momentos mais delicados da vida: a recuperação de uma cirurgia e a chegada de um bebê. Se você está com medo de complicações ou sem saber se o seu pós está normal, eu conduzo o seu cuidado com segurança e leveza.</p>
         <a class="brand-signature reveal d2" href="#contato" aria-label="Leiana Rodrigues, enfermeira">
-          <span class="name">Leiana Rodrigues</span>
-          <span class="role">Enfermeira · COREN-DF 354-413-ENF</span>
+          <img src="assets/leiana-assinatura.jpg" alt="Enfª Leiana Rodrigues · Laserterapia, Pós Operatório e Pós Parto" width="420" height="165" loading="eager">
         </a>
         <div class="ctas reveal d3">
           <!-- R01: link real de WhatsApp -->
-          <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20pelo%20seu%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." data-wa="Olá, Leiana! Vim pelo seu site e quero agendar uma avaliação.">
+          <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20do%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." data-wa="Olá, Leiana! Vim do site e quero agendar uma avaliação.">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.4Z"/></svg>
             Agendar pelo WhatsApp
           </a>
@@ -730,7 +725,7 @@
     <div class="form-confirm" id="formConfirm">
       <span class="serif">Recebido com carinho.</span>
       <p>Suas informações foram organizadas. O próximo passo é continuar pelo WhatsApp para a Leiana entender o seu momento e orientar o melhor cuidado.</p>
-      <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Enviei%20o%20formul%C3%A1rio%20e%20quero%20continuar%20pelo%20WhatsApp." data-wa="Olá, Leiana! Enviei o formulário e quero continuar pelo WhatsApp.">Falar com a Leiana</a>
+      <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20do%20site%2C%20enviei%20o%20formul%C3%A1rio%20e%20quero%20continuar%20pelo%20WhatsApp." data-wa="Olá, Leiana! Vim do site, enviei o formulário e quero continuar pelo WhatsApp.">Falar com a Leiana</a>
     </div>
   </div>
 </section>
@@ -744,11 +739,11 @@
     <!-- R10: dois botões de ação -->
     <div class="ctas reveal d3">
       <!-- R01: link real de WhatsApp -->
-      <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20pelo%20seu%20site%20e%20quero%20conversar%20sobre%20o%20meu%20momento." data-wa="Olá, Leiana! Vim pelo seu site e quero conversar sobre o meu momento.">
+      <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20do%20site%20e%20quero%20conversar%20sobre%20o%20meu%20momento." data-wa="Olá, Leiana! Vim do site e quero conversar sobre o meu momento.">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.4Z"/></svg>
         Conversar com a Leiana
       </a>
-      <a class="btn ghost" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." data-wa="Olá, Leiana! Quero agendar uma avaliação.">
+      <a class="btn ghost" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20do%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." data-wa="Olá, Leiana! Vim do site e quero agendar uma avaliação.">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
         Agendar avaliação
       </a>
@@ -777,7 +772,7 @@
 </section>
 
 <!-- R01: link real de WhatsApp no botão flutuante -->
-<a class="float-wa" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20pelo%20seu%20site." data-wa="Olá, Leiana! Vim pelo seu site." aria-label="WhatsApp">
+<a class="float-wa" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Vim%20do%20site." data-wa="Olá, Leiana! Vim do site." aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.4Z"/></svg>
 </a>
 
@@ -787,7 +782,7 @@
   <br><span class="reg">COREN-DF Nº 354-413-ENF</span><br>
   <a href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=site&utm_content=footer" target="_blank" rel="noopener" style="color:var(--rose);text-decoration:none" data-track="ig_footer_click">@enf.leiana</a>
   <div class="credit">
-    <a class="creator-link" href="https://wa.me/5561998461172?text=Bruno%20eu%20te%20encontrei%20no%20Site%20da%20Leiana%20Rodrigues%20e%20quero%20uma%20consultoria%20contigo." target="_blank" rel="noopener" data-track="bruno_footer_click" aria-label="Falar com Bruno Caetano pelo WhatsApp">
+    <a class="creator-link" href="https://wa.me/5561998461172?text=Bruno%20eu%20vim%20do%20site%20da%20Leiana%20Rodrigues%20e%20quero%20uma%20consultoria%20contigo." target="_blank" rel="noopener" data-track="bruno_footer_click" aria-label="Falar com Bruno Caetano pelo WhatsApp">
       <span>Site criado por</span>
       <strong>Bruno Caetano | Marketing Sob Medida</strong>
       <span>· (61) 99846-1172</span>
@@ -876,7 +871,7 @@ const GTM_ID = "";
       btn.textContent = "Enviando…";
       var hasWeb3Forms = WEB3FORMS_KEY && WEB3FORMS_KEY.indexOf("COLAR_") !== 0;
       if(!hasWeb3Forms){
-        var msg = "Olá, Leiana! Vim pelo seu site e quero conhecer os planos.\n\nNome: "+nome+"\nWhatsApp: "+whatsapp+"\nE-mail: "+email+"\nCuidado: "+servico;
+        var msg = "Olá, Leiana! Vim do site e quero conhecer os planos.\n\nNome: "+nome+"\nWhatsApp: "+whatsapp+"\nE-mail: "+email+"\nCuidado: "+servico;
         track("form_planos_whatsapp","fallback");
         form.style.display = "none";
         if(confirm) confirm.style.display = "block";
