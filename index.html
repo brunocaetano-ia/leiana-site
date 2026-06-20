@@ -6,6 +6,17 @@
 <meta name="theme-color" content="#FBF5EE">
 <title>Leiana Rodrigues · Enfermagem pós-operatória, pós-parto e cuidados especiais em Brasília</title>
 <meta name="description" content="Enfermeira há mais de 12 anos em Brasília. Pós-operatório, pós-parto, laserterapia, taping, estética avançada, furo de orelha humanizado e consultoria oncológica. Cuidado com segurança e leveza.">
+<link rel="canonical" href="https://brunocaetano-ia.github.io/leiana-site/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Leiana Rodrigues · Enfermagem pós-operatória e pós-parto em Brasília">
+<meta property="og:description" content="Cuidado em domicílio para pós-operatório, puerpério, laserterapia e curativos avançados em Brasília e entorno. Técnica de hospital, carinho de casa.">
+<meta property="og:image" content="https://brunocaetano-ia.github.io/leiana-site/assets/leiana-hero.jpg">
+<meta property="og:url" content="https://brunocaetano-ia.github.io/leiana-site/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Leiana Rodrigues · Enfermagem em Brasília">
+<meta name="twitter:description" content="Pós-operatório, pós-parto, laserterapia e cuidados especiais com segurança e leveza.">
+<meta name="twitter:image" content="https://brunocaetano-ia.github.io/leiana-site/assets/leiana-hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -237,7 +248,10 @@
     background:var(--white);border-radius:22px;padding:30px 28px;
     border:1px solid rgba(216,154,160,.25);
     box-shadow:0 16px 40px -26px rgba(44,54,84,.2);
+    color:inherit;text-decoration:none;display:block;
   }
+  a.tip{transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s}
+  a.tip:hover{transform:translateY(-2px);box-shadow:0 20px 46px -26px rgba(44,54,84,.34)}
   .tip h3{font-size:19px;color:var(--navy);margin-bottom:10px;line-height:1.35}
   .tip p{font-size:14.5px;color:var(--ink-dim)}
   .tip .lbl{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--rose-deep);display:block;margin-bottom:12px}
@@ -274,6 +288,10 @@
   .form-confirm{display:none;text-align:center;padding:44px 0}
   .form-confirm .serif{font-size:22px;display:block;margin-bottom:14px;font-style:italic;font-family:var(--serif)}
   .form-confirm p{font-size:15px;color:var(--ink-dim);margin-bottom:28px}
+  .form-note{
+    max-width:520px;margin:16px auto 0;
+    font-size:12.5px;line-height:1.6;color:var(--ink-dim);text-align:left;
+  }
 
   .contact{text-align:center}
   .contact h2{font-size:clamp(32px,5vw,54px)}
@@ -365,7 +383,7 @@
 </head>
 <body>
 
-<div class="ribbon">Uma prévia preparada especialmente para <strong>Leiana Rodrigues</strong> · <em>nada aqui é definitivo, tudo aqui é começo</em></div>
+<div class="ribbon">Leiana Rodrigues · <strong>enfermagem pós-operatória e pós-parto</strong> · <em>Brasília e entorno</em></div>
 
 <nav>
   <a class="logo" href="#inicio"><span class="mono">LR</span><span class="nm">Leiana <em>Rodrigues</em></span></a>
@@ -374,6 +392,7 @@
     <a href="#quem-sou-eu">Quem sou eu</a>
     <a href="#cuidados">Cuidados</a>
     <a href="#dicas">Dicas</a>
+    <a href="#cicatrizacoes">Cicatrizações</a>
     <a href="#depoimentos">Depoimentos</a>
     <a href="#planos">Planos</a>
     <a href="#contato">Contato</a>
@@ -402,7 +421,7 @@
       <div class="hero-media reveal d2">
         <div class="ring"></div>
         <div class="dotline"></div>
-        <a class="arch reel-link" href="https://www.instagram.com/p/DW4zdgiivkq/?utm_source=leiana-site&utm_medium=referral&utm_campaign=previa&utm_content=hero_reel" target="_blank" rel="noopener" data-track="hero_reel_click" aria-label="Ver a publicação no Instagram">
+        <a class="arch reel-link" href="https://www.instagram.com/p/DW4zdgiivkq/?utm_source=leiana-site&utm_medium=referral&utm_campaign=site&utm_content=hero_reel" target="_blank" rel="noopener" data-track="hero_reel_click" aria-label="Ver a publicação no Instagram">
           <video autoplay muted loop playsinline poster="assets/leiana-hero.jpg">
             <source src="assets/reel-web.mp4" type="video/mp4">
           </video>
@@ -426,7 +445,7 @@
     <div class="about-grid">
       <div class="hero-media reveal">
         <div class="arch">
-          <img src="assets/leiana-sobre.jpg" alt="Leiana Rodrigues, enfermeira">
+          <img src="assets/leiana-sobre.jpg" alt="Leiana Rodrigues, enfermeira" width="1350" height="1688" loading="lazy">
         </div>
       </div>
       <div>
@@ -451,7 +470,6 @@
             <div><b>Pós-graduação em Docência do Ensino Superior</b><span>IBEP</span></div>
           </div>
         </div>
-        <!-- CONFIRMAR FORMATO COM A CARTEIRINHA REAL DO COREN ANTES DE PUBLICAR -->
         <div class="coren reveal d3">Registro profissional · COREN-DF Nº 354-413-ENF</div>
       </div>
     </div>
@@ -490,8 +508,8 @@
     </div>
 
     <!-- R05: os 3 serviços abaixo ainda não estão em atendimento ativo -->
-    <div class="grouplbl reveal">Cuidados especiais</div>
-    <div class="cards g3">
+    <div class="grouplbl reveal" hidden>Cuidados especiais</div>
+    <div class="cards g3" hidden>
       <div class="card soon reveal d1">
         <span class="badge-soon">Em breve</span>
         <span class="mini">estética</span>
@@ -572,7 +590,40 @@
       </div>
     </div>
 
-    <p class="more reveal">Conteúdo novo toda semana no <a href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=previa&utm_content=dicas" target="_blank" rel="noopener" data-track="ig_dicas_click">@enf.leiana</a></p>
+    <p class="more reveal">Conteúdo novo toda semana no <a href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=site&utm_content=dicas" target="_blank" rel="noopener" data-track="ig_dicas_click">@enf.leiana</a></p>
+  </div>
+</section>
+
+<section class="tips" id="cicatrizacoes">
+  <div class="wrap">
+    <div class="eyebrow reveal">Cicatrizações</div>
+    <h2 class="reveal d1">Imagens reais,<br><em>com aviso sensível.</em></h2>
+    <p class="lead reveal d2">Alguns registros mostram a evolução de feridas, cicatrizes, edema e recuperação. Abra apenas se esse tipo de imagem fizer sentido para você neste momento.</p>
+
+    <div class="tipgrid">
+      <a class="tip reveal d1" href="https://www.instagram.com/reel/DZsSnI_xh08/?utm_source=leiana-site&utm_medium=referral&utm_campaign=site&utm_content=cicatrizacoes" target="_blank" rel="noopener" data-track="cicatrizacao_1_click">
+        <span class="lbl">imagem sensível · cicatriz</span>
+        <h3>Cicatrizes evidentes e cuidado no pós-operatório</h3>
+        <p>Registro real publicado no Instagram da Leiana. Indicado para quem quer entender como acompanhamento profissional pode orientar cada etapa da evolução.</p>
+      </a>
+      <a class="tip reveal d2" href="https://www.instagram.com/reel/DYQj4AvMQnp/?utm_source=leiana-site&utm_medium=referral&utm_campaign=site&utm_content=cicatrizacoes" target="_blank" rel="noopener" data-track="cicatrizacao_2_click">
+        <span class="lbl">imagem sensível · recuperação</span>
+        <h3>Medo da cicatriz e acompanhamento preventivo</h3>
+        <p>Conteúdo real da Leiana sobre recuperação, prevenção de intercorrências e cuidado com o resultado depois da cirurgia.</p>
+      </a>
+      <a class="tip reveal d2" href="https://www.instagram.com/reel/DY7-cwyKtCp/?utm_source=leiana-site&utm_medium=referral&utm_campaign=site&utm_content=cicatrizacoes" target="_blank" rel="noopener" data-track="cicatrizacao_3_click">
+        <span class="lbl">imagem sensível · caso real</span>
+        <h3>Histórico de cicatriz alta e cuidado desde o começo</h3>
+        <p>Exemplo de caso em que o acompanhamento começa cedo para reduzir ansiedade, orientar sinais e proteger a evolução da cicatriz.</p>
+      </a>
+      <a class="tip reveal d3" href="https://www.instagram.com/p/DZYf9giJ3Ii/?utm_source=leiana-site&utm_medium=referral&utm_campaign=site&utm_content=cicatrizacoes" target="_blank" rel="noopener" data-track="cicatrizacao_4_click">
+        <span class="lbl">imagem sensível · edema</span>
+        <h3>Edema, hematomas e respeito ao processo</h3>
+        <p>Registro publicado para mostrar que recuperação tem fases. A avaliação profissional ajuda a diferenciar evolução esperada de sinal de alerta.</p>
+      </a>
+    </div>
+
+    <p class="more reveal">Esses registros ficam no Instagram para preservar contexto e consentimento da publicação original.</p>
   </div>
 </section>
 
@@ -613,9 +664,9 @@
   <div class="wrap" style="text-align:center">
     <div class="eyebrow reveal">Planos e valores</div>
     <h2 class="reveal d1">Conheça os planos<br><em>e valores.</em></h2>
-    <p class="lead reveal d2" style="margin:0 auto">Preencha o formulário e receba as informações diretamente no seu e-mail. Sem compromisso — só para você ter tudo em mãos com calma.</p>
+    <p class="lead reveal d2" style="margin:0 auto">Preencha seus dados e siga pelo WhatsApp com uma mensagem organizada. Assim a conversa já começa com o cuidado que você precisa.</p>
 
-    <form id="formPlanos" class="form-cta reveal d3" action="https://api.web3forms.com/submit" method="POST" novalidate>
+    <form id="formPlanos" class="form-cta reveal d3" method="POST">
       <input type="hidden" name="access_key" id="w3fKey">
       <input type="hidden" name="subject" value="Novo contato pelo site — Planos e valores">
       <input type="hidden" name="from_name" value="Site Leiana Rodrigues">
@@ -630,12 +681,13 @@
         <option value="Laserterapia">Laserterapia</option>
         <option value="Kinesio Taping">Kinesio Taping</option>
       </select>
-      <button type="submit" class="btn">Quero conhecer os planos</button>
+      <button type="submit" class="btn">Continuar pelo WhatsApp</button>
     </form>
+    <p class="form-note reveal d3">Ao continuar, seus dados serão usados apenas para iniciar o atendimento e entender qual cuidado faz sentido para o seu momento.</p>
 
     <div class="form-confirm" id="formConfirm">
       <span class="serif">Recebido com carinho.</span>
-      <p>As informações foram para o seu e-mail. Se preferir continuar pelo WhatsApp, é só me chamar — fico feliz em ajudar a encontrar o cuidado certo para o seu momento.</p>
+      <p>Suas informações foram organizadas. O próximo passo é continuar pelo WhatsApp para a Leiana entender o seu momento e orientar o melhor cuidado.</p>
       <a class="btn" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Enviei%20o%20formul%C3%A1rio%20e%20quero%20continuar%20pelo%20WhatsApp." data-wa="Olá, Leiana! Enviei o formulário e quero continuar pelo WhatsApp.">Falar com a Leiana</a>
     </div>
   </div>
@@ -654,17 +706,15 @@
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.4Z"/></svg>
         Conversar com a Leiana
       </a>
-      <!-- R10: agenda — colar link do Google Calendar abaixo -->
-      <!-- COLAR LINK DA AGENDA DE COMPROMISSOS DO GOOGLE CALENDAR -->
-      <a class="btn ghost" href="COLAR_LINK_AGENDA_AQUI" target="_blank" rel="noopener">
+      <a class="btn ghost" href="https://wa.me/5561995289852?text=Ol%C3%A1%2C%20Leiana!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." data-wa="Olá, Leiana! Quero agendar uma avaliação.">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-        Agendar na agenda
+        Agendar avaliação
       </a>
     </div>
 
     <div class="socials reveal d3">
       <!-- R04: mantido apenas Instagram -->
-      <a class="soc" href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=previa&utm_content=contato" target="_blank" rel="noopener" aria-label="Instagram" data-track="ig_contato_click">
+      <a class="soc" href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=site&utm_content=contato" target="_blank" rel="noopener" aria-label="Instagram" data-track="ig_contato_click">
         <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4 1.2-.1 1.6-.1 4.8-.1Zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a5 5 0 1 1 0 9.9 5 5 0 0 1 0-9.9Zm0 8.1a3.2 3.2 0 1 0 0-6.3 3.2 3.2 0 0 0 0 6.3Zm6.3-8.3a1.2 1.2 0 1 1-2.3 0 1.2 1.2 0 0 1 2.3 0Z"/></svg>
       </a>
     </div>
@@ -692,9 +742,8 @@
 <footer id="fim">
   <span class="serif">Cada fase importa. Cada detalhe transforma.</span>
   Leiana Rodrigues · Enfermagem pós-operatória, pós-parto e cuidados especiais · Brasília DF
-  <!-- CONFIRMAR FORMATO COM A CARTEIRINHA REAL DO COREN ANTES DE PUBLICAR -->
   <br><span class="reg">COREN-DF Nº 354-413-ENF</span><br>
-  <a href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=previa&utm_content=footer" target="_blank" rel="noopener" style="color:var(--rose);text-decoration:none" data-track="ig_footer_click">@enf.leiana</a>
+  <a href="https://www.instagram.com/enf.leiana/?utm_source=leiana-site&utm_medium=referral&utm_campaign=site&utm_content=footer" target="_blank" rel="noopener" style="color:var(--rose);text-decoration:none" data-track="ig_footer_click">@enf.leiana</a>
   <div class="credit">Site criado por <a href="https://wa.me/5561998461172?text=Ol%C3%A1%2C%20Bruno!%20Vi%20o%20site%20da%20Leiana%20e%20quero%20um%20assim.">Bruno Caetano | Marketing Sob Medida</a> · (61) 99846-1172</div>
 </footer>
 
@@ -703,17 +752,20 @@
    CONFIGURAÇÃO — edite só este bloco
    ============================================================ */
 
-/* R09 – Web3Forms: gere a sua chave em web3forms.com e cole abaixo */
-const WEB3FORMS_KEY = "COLAR_ACCESS_KEY_AQUI";
+/* R09 – Web3Forms: opcional. Se a chave ficar vazia, o formulario segue pelo WhatsApp. */
+const WEB3FORMS_KEY = "";
+
+/* R11 – GTM/GA4: opcional. Cole o ID GTM-XXXXXXX se quiser ativar coleta. */
+const GTM_ID = "";
 
 /* R07 – Instagram: cole a URL de cada post/reel nos slots abaixo.
    Deixe "" para exibir o depoimento em texto como fallback.
    Exemplo: "https://www.instagram.com/p/XXXXXXXX/" */
 var DEPOIMENTOS_IG = [
-  "", /* slot 0 – pós-operatório   */
-  "", /* slot 1 – cicatrização     */
-  "", /* slot 2 – pós-parto        */
-  ""  /* slot 3 – laserterapia     */
+  "https://www.instagram.com/reel/DYPqhz0ud07/", /* slot 0 – pós-operatório   */
+  "https://www.instagram.com/p/DYHfwOSjOB1/", /* slot 1 – cicatrização     */
+  "https://www.instagram.com/p/DAgLb-mOoxr/", /* slot 2 – pós-parto        */
+  "https://www.instagram.com/reel/DF38Q7oNPXF/"  /* slot 3 – laserterapia     */
 ];
 
 /* ============================================================
@@ -722,6 +774,13 @@ var DEPOIMENTOS_IG = [
 (function(){
   "use strict";
   var WHATS_LEIANA = "5561995289852";
+
+  if(GTM_ID){
+    var gtm = document.createElement("script");
+    gtm.async = true;
+    gtm.src = "https://www.googletagmanager.com/gtm.js?id="+encodeURIComponent(GTM_ID);
+    document.head.appendChild(gtm);
+  }
 
   /* === TRACKING (dataLayer pronto para GTM/GA4) === */
   window.dataLayer = window.dataLayer || [];
@@ -780,7 +839,7 @@ var DEPOIMENTOS_IG = [
     }
   })();
 
-  /* R09: Web3Forms — envio AJAX com confirmação inline */
+  /* R09: envio do formulario — WhatsApp por padrao; Web3Forms se houver chave */
   (function(){
     var keyInput = document.getElementById("w3fKey");
     if(keyInput) keyInput.value = WEB3FORMS_KEY;
@@ -790,8 +849,26 @@ var DEPOIMENTOS_IG = [
     form.addEventListener("submit", function(ev){
       ev.preventDefault();
       var btn = form.querySelector("button[type=submit]");
+      var fd = new FormData(form);
+      var nome = (fd.get("nome") || "").toString().trim();
+      var whatsapp = (fd.get("whatsapp") || "").toString().trim();
+      var email = (fd.get("email") || "").toString().trim();
+      var servico = (fd.get("servico") || "").toString().trim();
+      if(!nome || !whatsapp || !email || !servico){
+        alert("Preencha nome, WhatsApp, e-mail e o cuidado que você precisa.");
+        return;
+      }
       btn.disabled = true;
       btn.textContent = "Enviando…";
+      var hasWeb3Forms = WEB3FORMS_KEY && WEB3FORMS_KEY.indexOf("COLAR_") !== 0;
+      if(!hasWeb3Forms){
+        var msg = "Olá, Leiana! Vim pelo seu site e quero conhecer os planos.\n\nNome: "+nome+"\nWhatsApp: "+whatsapp+"\nE-mail: "+email+"\nCuidado: "+servico;
+        track("form_planos_whatsapp","fallback");
+        form.style.display = "none";
+        if(confirm) confirm.style.display = "block";
+        window.open("https://wa.me/"+WHATS_LEIANA+"?text="+encodeURIComponent(msg),"_blank");
+        return;
+      }
       fetch("https://api.web3forms.com/submit", {method:"POST", body:new FormData(form)})
         .then(function(r){ return r.json(); })
         .then(function(res){
@@ -801,13 +878,13 @@ var DEPOIMENTOS_IG = [
             track("form_planos_enviado","sucesso");
           } else {
             btn.disabled = false;
-            btn.textContent = "Quero conhecer os planos";
+            btn.textContent = "Continuar pelo WhatsApp";
             alert("Não foi possível enviar. Tente novamente ou entre em contato pelo WhatsApp.");
           }
         })
         .catch(function(){
           btn.disabled = false;
-          btn.textContent = "Quero conhecer os planos";
+          btn.textContent = "Continuar pelo WhatsApp";
           alert("Erro de conexão. Tente novamente.");
         });
     });
