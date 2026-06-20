@@ -228,7 +228,7 @@
     margin:46px 0 18px;
   }
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px}
-  .cards.g4{grid-template-columns:repeat(2,1fr)}
+  .cards.g4{grid-template-columns:repeat(4,1fr)}
   .cards.g3{grid-template-columns:repeat(3,1fr)}
   .card{
     background:var(--white);border:1px solid rgba(216,154,160,.22);border-radius:22px;
@@ -263,11 +263,11 @@
       radial-gradient(circle at 86% 10%,rgba(194,160,94,.13),transparent 26%),
       linear-gradient(180deg,var(--blush),var(--cream) 62%,#FFF9F4);
   }
-  .tipgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:54px}
+  .tipgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:54px}
   .tip{
     background:
       linear-gradient(145deg,rgba(255,255,255,.96),rgba(251,245,238,.82));
-    border-radius:22px;padding:30px 28px;
+    border-radius:22px;padding:26px 22px;
     border:1px solid rgba(216,154,160,.25);
     box-shadow:0 16px 40px -26px rgba(44,54,84,.2);
     color:inherit;text-decoration:none;display:block;position:relative;overflow:hidden;
@@ -296,8 +296,8 @@
   .tip>*{position:relative;z-index:1}
   a.tip{transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s}
   a.tip:hover{transform:translateY(-2px);box-shadow:0 20px 46px -26px rgba(44,54,84,.34)}
-  .tip h3{font-size:19px;color:var(--navy);margin-bottom:10px;line-height:1.35}
-  .tip p{font-size:14.5px;color:var(--ink-dim)}
+  .tip h3{font-size:18px;color:var(--navy);margin-bottom:10px;line-height:1.35}
+  .tip p{font-size:14px;color:var(--ink-dim)}
   .tip .lbl{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--rose-deep);display:block;margin-bottom:12px}
   .tips .more{text-align:center;margin-top:42px;font-size:14px;color:var(--ink-dim)}
   .tips .more a{color:var(--rose-deep);text-decoration:none;border-bottom:1px solid rgba(194,115,124,.4)}
@@ -446,6 +446,7 @@
   @media (min-width:861px) and (max-width:1080px){
     .wrap{max-width:92vw}
     .hero .arch{width:min(300px,40vw)}
+    .cards.g4,.tipgrid{grid-template-columns:repeat(2,1fr)}
   }
   @media (max-width:380px){
     .wrap{padding:0 16px}
