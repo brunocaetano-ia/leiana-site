@@ -37,6 +37,7 @@
     --sans:'Jost','Segoe UI',system-ui,sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box;min-width:0}
+  [hidden]{display:none!important}
   html{scroll-behavior:smooth;width:100%;max-width:100%;overflow-x:hidden}
   body{
     background:var(--cream);color:var(--ink);
@@ -52,7 +53,7 @@
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
   .wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
-  section{padding:82px 0;position:relative}
+  section{padding:82px 0;position:relative;overflow:hidden}
   h1,h2,h3,.serif{font-family:var(--serif);font-weight:500}
   h2{font-size:clamp(30px,4.4vw,46px);line-height:1.15;color:var(--navy);margin-bottom:18px}
   h2 em{font-style:italic;color:var(--rose-deep)}
@@ -63,7 +64,7 @@
   .reveal.in{opacity:1;transform:none}
   .d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
 
-  .blob{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0}
+  .blob{display:none}
   .blob.b1{width:420px;height:420px;background:rgba(235,160,131,.20);top:-120px;right:-140px}
   .blob.b2{width:360px;height:360px;background:rgba(216,154,160,.22);bottom:-100px;left:-120px}
   .blob.b3{width:300px;height:300px;background:rgba(194,160,94,.13)}
