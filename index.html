@@ -272,7 +272,8 @@ footer{background:#080808;padding:5rem 0 0}
 .footer-loc{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.12)}
 
 /* ADMIN */
-.admin-btn{position:fixed;bottom:2rem;right:2rem;z-index:1000;width:46px;height:46px;background:var(--c1);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.35);transition:background .3s}
+.admin-btn{position:fixed;bottom:2rem;right:2rem;z-index:1000;width:46px;height:46px;background:var(--c1);border:none;cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.35);transition:background .3s}
+.admin-btn.admin-on{display:flex}
 .admin-btn:hover{background:var(--c3)}
 .admin-btn svg{width:17px;height:17px;stroke:#fff;fill:none;stroke-width:2}
 .admin-panel{position:fixed;bottom:5.5rem;right:2rem;z-index:1000;background:#fff;box-shadow:0 8px 40px rgba(0,0,0,.18);padding:1.5rem;width:250px;border:1px solid rgba(0,0,0,.05);display:none}
@@ -812,6 +813,11 @@ footer{background:#080808;padding:5rem 0 0}
 // remove o fallback no-js assim que o JS roda
 document.documentElement.classList.remove('no-js')
 const prefersReduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+// Painel admin: botão de engrenagem só aparece com ?admin=1 na URL
+if(new URLSearchParams(location.search).get('admin')==='1'){
+  document.querySelector('.admin-btn').classList.add('admin-on')
+}
 
 function toggleAdmin(){document.getElementById('adminPanel').classList.toggle('open')}
 function setTheme(t){document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('.theme-opt').forEach(b=>b.classList.remove('active'));document.getElementById('btn-'+t).classList.add('active')}
