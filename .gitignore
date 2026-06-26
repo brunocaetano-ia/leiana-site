@@ -1,0 +1,4 @@
+# Artefatos de desenvolvimento (não compõem o site publicado)
+_screenshots/
+_backups/
+.index-trunc.bak

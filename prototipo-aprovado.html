@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="gold" class="no-js">
+<html lang="pt-BR" data-theme="gold">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leiana Rodrigues · Enfermeira Especialista</title>
-<link rel="preload" as="image" href="assets/fotos/hero.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root,[data-theme="gold"]{--c1:#1A1A1A;--c2:#2D2D2D;--c3:#C9A96E;--c3d:#9C7E4A;--c4:#E8D5B0;--c5:#F9F6F1;--c6:#FFFFFF;--c7:#6B6B6B;--c-hero:#1A1A1A;--c-stat:#111}
-[data-theme="navy"]{--c1:#0D1B2A;--c2:#1B2D42;--c3:#4A7FA5;--c3d:#467BA1;--c4:#B8D4E8;--c5:#F5F7FA;--c6:#FFFEF8;--c7:#5A6B7A;--c-hero:#0D1B2A;--c-stat:#091422}
-[data-theme="rose"]{--c1:#1C1410;--c2:#2E2018;--c3:#A0785A;--c3d:#966E50;--c4:#DEC4AE;--c5:#FAF6F3;--c6:#FFFFFF;--c7:#7A6355;--c-hero:#1C1410;--c-stat:#140E0A}
-/* --c3d = acento escurecido para uso como TEXTO sobre fundo claro (WCAG); --c3 (vivo) permanece nos fundos escuros */
+:root,[data-theme="gold"]{--c1:#1A1A1A;--c2:#2D2D2D;--c3:#C9A96E;--c4:#E8D5B0;--c5:#F9F6F1;--c6:#FFFFFF;--c7:#6B6B6B;--c-hero:#1A1A1A;--c-stat:#111}
+[data-theme="navy"]{--c1:#0D1B2A;--c2:#1B2D42;--c3:#4A7FA5;--c4:#B8D4E8;--c5:#F5F7FA;--c6:#FFFEF8;--c7:#5A6B7A;--c-hero:#0D1B2A;--c-stat:#091422}
+[data-theme="rose"]{--c1:#1C1410;--c2:#2E2018;--c3:#A0785A;--c4:#DEC4AE;--c5:#FAF6F3;--c6:#FFFFFF;--c7:#7A6355;--c-hero:#1C1410;--c-stat:#140E0A}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--c6);color:var(--c1);line-height:1.6;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 .serif{font-family:'Cormorant Garamond',serif}
-.tag{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--c3d);font-weight:500;display:block;margin-bottom:1rem}
+.tag{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--c3);font-weight:500;display:block;margin-bottom:1rem}
 .headline{font-family:'Cormorant Garamond',serif;font-weight:400;line-height:1.15;color:var(--c1)}
 .headline-xl{font-size:clamp(2.8rem,5vw,4.2rem)}
 .headline-lg{font-size:clamp(2rem,3.5vw,3rem)}
-.headline em{font-style:italic;color:var(--c3d)}
-/* seções escuras: acento volta ao dourado vivo (contraste alto sobre fundo escuro) */
-.como .headline em,.depoimentos .headline em,.cta-final .headline em,.depoimentos .tag{color:var(--c3)}
+.headline em{font-style:italic;color:var(--c3)}
 .body{font-size:.92rem;color:var(--c7);line-height:1.88}
 .body-light{font-size:.92rem;color:rgba(255,255,255,.55);line-height:1.88}
 .container{max-width:1180px;margin:0 auto;padding:0 2.5rem}
@@ -43,26 +39,33 @@ a{text-decoration:none;color:inherit}
 nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.05);padding:1.1rem 0}
 .nav-inner{display:flex;justify-content:space-between;align-items:center}
 .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;color:var(--c1)}
-.nav-logo span{color:var(--c3d)}
+.nav-logo span{color:var(--c3)}
 .nav-links{display:flex;gap:2.5rem;list-style:none}
 .nav-links a{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c7);transition:color .25s}
-.nav-links a:hover{color:var(--c3d)}
+.nav-links a:hover{color:var(--c3)}
 
 /* HERO */
 .hero{min-height:100vh;display:grid;grid-template-columns:55% 45%;padding-top:4.8rem}
 .hero-left{background:var(--c5);display:flex;flex-direction:column;justify-content:center;padding:5rem 4rem 5rem 5rem}
 .hero-eyebrow{display:flex;align-items:center;gap:1rem;margin-bottom:2rem}
-.hero-eyebrow span{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--c3d)}
+.hero-eyebrow span{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--c3)}
 .hero-eyebrow i{display:block;width:2.5rem;height:1px;background:var(--c3)}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,4.5vw,4.5rem);font-weight:400;line-height:1.1;color:var(--c1);margin-bottom:1.8rem}
-.hero-title em{font-style:italic;color:var(--c3d)}
+.hero-title em{font-style:italic;color:var(--c3)}
 .hero-desc{font-size:.92rem;line-height:1.9;color:var(--c7);max-width:430px;margin-bottom:2.8rem}
 .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
 .hero-note{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--c7);padding-top:2rem;border-top:1px solid rgba(0,0,0,.08)}
+
 .hero-right{background:var(--c-hero);position:relative;overflow:hidden}
+
+/* FOTO LEIANA — hero */
 .hero-foto{width:100%;height:100%;position:relative;display:flex;align-items:flex-end}
-.hero-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
-.hero-foto-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.55) 100%);pointer-events:none}
+.hero-foto-bg{position:absolute;inset:0;background:linear-gradient(160deg,#2a2520 0%,#111 60%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem}
+.hero-foto-frame{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.2rem;opacity:.35}
+.hero-foto-frame svg{width:48px;height:48px;stroke:var(--c3);fill:none;stroke-width:1}
+.hero-foto-frame span{font-family:'Cormorant Garamond',serif;font-size:.85rem;letter-spacing:.15em;color:var(--c3);text-transform:uppercase;text-align:center;line-height:2}
+/* quando tiver foto real: .hero-foto img{width:100%;height:100%;object-fit:cover;object-position:top} */
+
 .hero-stats-bar{position:relative;z-index:2;width:100%;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);border-top:1px solid rgba(201,169,110,.12);padding:1.5rem 2rem;display:flex;justify-content:space-around;align-items:center}
 .h-stat{text-align:center}
 .h-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--c3);font-weight:400;line-height:1}
@@ -81,15 +84,21 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(255,255,255,.97)
 .sobre{background:var(--c6)}
 .sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:stretch}
 .sobre-visual{display:flex;flex-direction:column;gap:0}
-.sobre-foto{flex:1;min-height:460px;position:relative;overflow:hidden}
-.sobre-carousel-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;opacity:0;transition:opacity 1.2s ease}
-.sobre-carousel-img.active{opacity:1}
+
+/* FOTO LEIANA — sobre */
+.sobre-foto{flex:1;min-height:460px;background:linear-gradient(145deg,#e8e0d5,#d0c4b0);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem}
+.sobre-foto::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(201,169,110,.08) 0%,transparent 70%)}
+.sobre-foto svg{width:36px;height:36px;stroke:rgba(150,130,100,.5);fill:none;stroke-width:1.2}
+.sobre-foto span{font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(150,130,100,.6)}
+/* quando tiver foto: .sobre-foto img{width:100%;height:100%;object-fit:cover;object-position:top center} */
+
 .coren-badge{background:var(--c1);padding:1.4rem 2rem;display:flex;align-items:center;gap:1.5rem}
 .coren-badge-left{border-right:1px solid rgba(201,169,110,.2);padding-right:1.5rem}
 .coren-badge-reg{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--c3);font-weight:300;line-height:1}
 .coren-badge-tipo{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:.3rem}
 .coren-badge-num{font-size:.82rem;color:rgba(255,255,255,.6)}
 .coren-badge-status{font-size:.65rem;color:rgba(201,169,110,.7);margin-top:.2rem}
+
 .sobre-content{display:flex;flex-direction:column;justify-content:center}
 .sobre-quote{border-left:2px solid var(--c3);padding:1.2rem 1.5rem;margin:2rem 0;background:var(--c5)}
 .sobre-quote p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--c1);line-height:1.7;font-style:italic}
@@ -101,6 +110,7 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(255,255,255,.97)
 .servicos{background:var(--c5)}
 .servicos-head{display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:end;margin-bottom:4rem}
 .servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+
 .s-card{background:var(--c6);padding:2.5rem;position:relative;overflow:hidden;transition:transform .3s;border:1px solid transparent}
 .s-card::before{content:'';position:absolute;left:0;top:0;width:2px;height:0;background:var(--c3);transition:height .4s}
 .s-card:hover{transform:translateY(-4px);border-color:rgba(201,169,110,.15)}
@@ -110,11 +120,12 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(255,255,255,.97)
 .s-nome{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500;color:var(--c1);margin-bottom:.8rem}
 .s-desc{font-size:.83rem;color:var(--c7);line-height:1.78}
 .s-foot{margin-top:2rem;padding-top:1.2rem;border-top:1px solid rgba(0,0,0,.06);display:flex;justify-content:space-between;align-items:center}
-.s-lnk{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c3d)}
+.s-lnk{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c3)}
 .s-arr{width:1.8rem;height:1.8rem;border:1px solid rgba(201,169,110,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all .3s}
 .s-card:hover .s-arr{background:var(--c3);border-color:var(--c3)}
 .s-arr svg{width:10px;height:10px;stroke:var(--c3);fill:none;stroke-width:2;transition:stroke .3s}
 .s-card:hover .s-arr svg{stroke:#fff}
+
 .s-wide{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;align-items:center;gap:3rem;background:var(--c1);padding:2.5rem 3rem;border:none}
 .s-wide .s-num{color:rgba(201,169,110,.15)}
 .s-wide .s-nome{color:#fff}
@@ -123,42 +134,52 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(255,255,255,.97)
 .s-wide::before{background:var(--c3)}
 .s-wide:hover .s-num{color:rgba(201,169,110,.35)}
 
-/* COMO FUNCIONA */
+/* COMO FUNCIONA — TIMELINE */
 .como{background:var(--c1)}
 .como .tag{color:var(--c3)}
 .como .headline{color:#fff}
+.como-layout{margin-top:4rem;display:grid;grid-template-columns:1fr;gap:0;position:relative}
+
+/* linha vertical conectora */
 .como-timeline{display:flex;flex-direction:column;gap:0;position:relative;padding-left:4rem}
 .como-timeline::before{content:'';position:absolute;left:1.2rem;top:1.5rem;bottom:1.5rem;width:1px;background:linear-gradient(to bottom,transparent,rgba(201,169,110,.4) 15%,rgba(201,169,110,.4) 85%,transparent)}
+
 .como-step{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:start;padding:2.5rem 0;position:relative;opacity:.5;transition:opacity .4s}
 .como-step.active{opacity:1}
 .como-step-dot{position:absolute;left:-2.9rem;top:2.8rem;width:1.4rem;height:1.4rem;border-radius:50%;border:1px solid rgba(201,169,110,.3);background:var(--c1);display:flex;align-items:center;justify-content:center;transition:all .4s;z-index:1}
 .como-step.active .como-step-dot{border-color:var(--c3);background:var(--c3)}
 .como-step-dot-inner{width:.5rem;height:.5rem;border-radius:50%;background:transparent;transition:background .4s}
 .como-step.active .como-step-dot-inner{background:#fff}
+
 .como-step-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:rgba(201,169,110,.12);line-height:1;flex-shrink:0;width:3.5rem;transition:color .4s;text-align:right}
 .como-step.active .como-step-num{color:rgba(201,169,110,.3)}
+.como-step-body{}
 .como-step-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:#fff;margin-bottom:.6rem}
 .como-step-desc{font-size:.83rem;color:rgba(255,255,255,.4);line-height:1.75}
-.como-locais{margin-top:0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06);flex-direction:column;align-items:flex-start;gap:1rem;display:flex}
+.como-step-connector{height:2rem;margin-left:-.8rem;display:flex;align-items:center;gap:.75rem;padding-left:3rem}
+.como-step-connector span{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(201,169,110,.3)}
+
+.como-locais{margin-top:4rem;padding-top:3rem;border-top:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:3rem;flex-wrap:wrap}
 .como-locais-lbl{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--c3);white-space:nowrap}
 .como-locais-list{display:flex;gap:0;flex-wrap:wrap}
 .como-local{font-size:.8rem;color:rgba(255,255,255,.4);padding:.4rem 1.2rem;position:relative}
 .como-local:not(:last-child)::after{content:'';position:absolute;right:0;top:30%;height:40%;width:1px;background:rgba(255,255,255,.12)}
-.como-right-foto{width:100%;aspect-ratio:3/4;position:relative;overflow:hidden}
-.como-right-foto img{width:100%;height:100%;object-fit:cover;object-position:center}
-.como-right-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.45) 0%,transparent 60%)}
 
-/* LEIANA FOTO SECTION */
+/* FOTO LEIANA — seção dedicada */
 .leiana-foto-section{background:var(--c5);padding:5rem 0}
 .leiana-foto-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:center}
 .leiana-foto-main{position:relative}
-.leiana-foto-img{width:100%;aspect-ratio:3/4;position:relative;overflow:hidden}
-.leiana-foto-img img{width:100%;height:100%;object-fit:cover;object-position:top}
-.leiana-foto-badge{position:absolute;bottom:2rem;right:-1.5rem;background:var(--c3);padding:1.2rem 1.5rem;display:flex;flex-direction:column;gap:.3rem;z-index:2}
+.leiana-foto-img{width:100%;aspect-ratio:3/4;background:linear-gradient(145deg,#d5cfc8,#c0b8ae);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem}
+.leiana-foto-img::after{content:'FOTO LEIANA · ENSAIO PROFISSIONAL';position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);font-size:.58rem;letter-spacing:.18em;color:rgba(100,90,80,.5);white-space:nowrap}
+.leiana-foto-img svg{width:40px;height:40px;stroke:rgba(130,118,104,.4);fill:none;stroke-width:1.2}
+.leiana-foto-badge{position:absolute;bottom:2rem;right:-1.5rem;background:var(--c3);padding:1.2rem 1.5rem;display:flex;flex-direction:column;gap:.3rem}
 .leiana-foto-badge strong{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:#fff;font-weight:400;line-height:1}
 .leiana-foto-badge span{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}
-.leiana-foto-second{aspect-ratio:4/3;margin-top:1.5rem;margin-left:3rem;position:relative;overflow:hidden}
-.leiana-foto-second img{width:100%;height:100%;object-fit:cover;object-position:center}
+
+.leiana-foto-second{aspect-ratio:4/3;background:linear-gradient(145deg,#c8c0b5,#b5aba0);margin-top:1.5rem;margin-left:3rem;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.8rem;position:relative;overflow:hidden}
+.leiana-foto-second::after{content:'FOTO LEIANA · ATENDIMENTO';position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);font-size:.55rem;letter-spacing:.16em;color:rgba(100,90,80,.45);white-space:nowrap}
+.leiana-foto-second svg{width:28px;height:28px;stroke:rgba(130,118,104,.4);fill:none;stroke-width:1.2}
+
 .leiana-foto-content{display:flex;flex-direction:column;justify-content:center}
 .leiana-foto-content .body{margin-top:1.2rem}
 .leiana-foto-quote{margin:2.5rem 0;padding:1.5rem 2rem;border-left:2px solid var(--c3);background:var(--c6)}
@@ -176,28 +197,31 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(255,255,255,.97)
 .r-item:hover .r-idx{color:var(--c3)}
 .r-nome{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--c1);margin-bottom:.4rem}
 .r-desc{font-size:.82rem;color:var(--c7);line-height:1.78}
+
 .recursos-fotos{display:flex;flex-direction:column;gap:1rem}
-.r-foto-main{flex:1;min-height:300px;position:relative;overflow:hidden}
-.r-foto-main img{width:100%;height:100%;object-fit:cover;object-position:center}
+.r-foto-main{flex:1;min-height:300px;background:linear-gradient(145deg,#e5ddd5,#d8cec2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.8rem;position:relative;overflow:hidden}
+.r-foto-main::after{content:'FOTO DO PROCEDIMENTO';position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);font-size:.55rem;letter-spacing:.15em;color:rgba(120,108,95,.5);white-space:nowrap}
+.r-foto-main svg{width:30px;height:30px;stroke:rgba(140,124,108,.4);fill:none;stroke-width:1.2}
 .r-foto-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.r-foto-sm{height:130px;position:relative;overflow:hidden}
-.r-foto-sm img{width:100%;height:100%;object-fit:cover;object-position:center}
+.r-foto-sm{height:130px;background:linear-gradient(145deg,#ddd5cb,#ccc0b2);display:flex;align-items:center;justify-content:center;position:relative}
+.r-foto-sm::after{content:'↑ FOTO';position:absolute;bottom:.6rem;font-size:.52rem;color:rgba(120,108,95,.4);letter-spacing:.1em}
+.r-foto-sm svg{width:22px;height:22px;stroke:rgba(140,124,108,.35);fill:none;stroke-width:1.2}
 .r-foto-accent{height:130px;background:var(--c3);display:flex;align-items:center;justify-content:center;padding:1rem}
 .r-foto-accent p{font-family:'Cormorant Garamond',serif;font-size:.95rem;color:rgba(255,255,255,.75);font-style:italic;text-align:center;line-height:1.55}
 
 /* INSTAGRAM */
 .conteudo{background:var(--c5)}
 .conteudo-head{display:grid;grid-template-columns:1fr auto;align-items:end;margin-bottom:3.5rem;gap:2rem}
-.insta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
-.insta-card{background:var(--c6);overflow:hidden;transition:transform .3s,box-shadow .3s;cursor:pointer;display:block}
+.insta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.insta-card{background:var(--c6);overflow:hidden;transition:transform .3s,box-shadow .3s;cursor:pointer}
 .insta-card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.08)}
 .insta-thumb{aspect-ratio:4/5;background:linear-gradient(145deg,#e0d8d0,#cec4b8);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.8rem;position:relative;overflow:hidden}
-.insta-play{width:44px;height:44px;background:rgba(255,255,255,.88);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.insta-play{width:44px;height:44px;background:rgba(255,255,255,.88);border-radius:50%;display:flex;align-items:center;justify-content:center}
 .insta-play svg{width:14px;height:14px;fill:var(--c3);margin-left:2px}
 .insta-thumb-lbl{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(100,90,80,.45);text-align:center;padding:0 1.5rem;line-height:1.8;margin-top:.5rem}
 .insta-foot{padding:.9rem 1.2rem;border-top:1px solid rgba(0,0,0,.05);display:flex;align-items:center;justify-content:space-between}
 .insta-cat{font-size:.68rem;color:var(--c7)}
-.insta-cta{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--c3d)}
+.insta-cta{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--c3)}
 
 /* DEPOIMENTOS */
 .depoimentos{background:var(--c1)}
@@ -220,11 +244,11 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(255,255,255,.97)
 .faq-aside{position:sticky;top:8rem}
 .faq-aside-badge{background:var(--c5);padding:1.8rem;margin-top:2.5rem;border-left:2px solid var(--c3)}
 .faq-aside-badge p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--c1);line-height:1.7}
-.faq-aside-badge footer{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c3d);margin-top:.8rem}
+.faq-aside-badge footer{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c3);margin-top:.8rem}
 .faq-list{margin-top:2rem}
 .faq-item{border-bottom:1px solid rgba(0,0,0,.07)}
 .faq-q{font-family:'Cormorant Garamond',serif;font-size:1.06rem;color:var(--c1);cursor:pointer;padding:1.4rem 0;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:color .25s}
-.faq-q:hover{color:var(--c3d)}
+.faq-q:hover{color:var(--c3)}
 .faq-ico{width:1.8rem;height:1.8rem;border:1px solid rgba(0,0,0,.12);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--c7);transition:all .3s}
 .faq-item.open .faq-ico{background:var(--c3);border-color:var(--c3);color:#fff;transform:rotate(45deg)}
 .faq-a{font-size:.85rem;color:var(--c7);line-height:1.85;padding-bottom:1.4rem;display:none}
@@ -234,12 +258,16 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(255,255,255,.97)
 .atende{background:var(--c5)}
 .atende-layout{display:grid;grid-template-columns:1fr 2.2fr;gap:6rem;align-items:start;margin-top:4rem}
 .atende-intro .body{margin-top:1.2rem;max-width:260px}
+
+/* grid isométrico de cidades */
 .cidades-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(0,0,0,.07)}
 .cidade-item{padding:.75rem 1rem;font-size:.8rem;color:var(--c7);border-right:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06);transition:all .25s;cursor:default;display:flex;align-items:center;gap:.5rem}
-.cidade-item:hover{background:var(--c6);color:var(--c3d)}
+.cidade-item:hover{background:var(--c6);color:var(--c3)}
 .cidade-item:nth-child(4n){border-right:none}
 .cidade-dot{width:3px;height:3px;border-radius:50%;background:var(--c3);flex-shrink:0;opacity:.5}
 .cidade-item:hover .cidade-dot{opacity:1}
+.cidades-footer{margin-top:1.5rem;display:flex;align-items:center;gap:1rem}
+.cidades-note{font-size:.72rem;color:var(--c7)}
 
 /* CTA FINAL */
 .cta-final{background:var(--c1);padding:8rem 0;text-align:center;position:relative;overflow:hidden}
@@ -294,39 +322,20 @@ footer{background:#080808;padding:5rem 0 0}
 .toggle-thumb{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:transform .3s;box-shadow:0 1px 4px rgba(0,0,0,.2)}
 .toggle input:checked~.toggle-thumb{transform:translateX(16px)}
 
-/* WA FLUTUANTE */
-.wa-float{position:fixed;bottom:5.5rem;left:2rem;z-index:990;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .3s}
-.wa-float:hover{transform:scale(1.08)}
-.wa-float svg{width:26px;height:26px;fill:#fff}
-
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
-/* fallback: sem JS o conteúdo nunca pode ficar invisível */
-.no-js .reveal{opacity:1;transform:none}
-
-/* ACESSIBILIDADE — respeitar prefers-reduced-motion */
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
-  .reveal{opacity:1!important;transform:none!important}
-  .sobre-carousel-img{opacity:1}
-  .sobre-carousel-img:not(.active){opacity:0}
-  .como-step{opacity:1}
-}
 
 @media(max-width:900px){
   .hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:2.5rem 1.5rem}
   .strip-row{grid-template-columns:1fr 1fr}
   .sobre-grid,.servicos-head,.depo-head,.conteudo-head,.faq-layout,.atende-layout,.leiana-foto-grid,.recursos-layout,.footer-top{grid-template-columns:1fr;gap:2rem}
-  .servicos-grid,.depo-grid,.cidades-grid{grid-template-columns:1fr}
-  .insta-grid{grid-template-columns:repeat(2,1fr)}
+  .servicos-grid,.insta-grid,.depo-grid,.cidades-grid{grid-template-columns:1fr}
   .como-step{grid-template-columns:1fr}
   .section{padding:4rem 0}
   .container{padding:0 1.5rem}
   nav .nav-links{display:none}
   .cidades-grid{grid-template-columns:repeat(2,1fr)}
-  .leiana-foto-badge{right:0}
-  .leiana-foto-second{margin-left:0}
 }
 </style>
 </head>
@@ -361,8 +370,12 @@ footer{background:#080808;padding:5rem 0 0}
   </div>
   <div class="hero-right">
     <div class="hero-foto">
-      <img fetchpriority="high" decoding="async" src="assets/fotos/hero.jpg" alt="Leiana Rodrigues · Enfermeira Especialista">
-      <div class="hero-foto-overlay"></div>
+      <div class="hero-foto-bg">
+        <div class="hero-foto-frame">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M20 7h-3.5l-2-3h-5l-2 3H4a1 1 0 00-1 1v11a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z"/></svg>
+          <span>FOTO DO ENSAIO<br>PROFISSIONAL<br>DA LEIANA</span>
+        </div>
+      </div>
       <div class="hero-stats-bar">
         <div class="h-stat">
           <div class="h-stat-num">14+</div>
@@ -405,11 +418,8 @@ footer{background:#080808;padding:5rem 0 0}
     <div class="sobre-grid">
       <div class="sobre-visual reveal">
         <div class="sobre-foto">
-          <img loading="lazy" decoding="async" class="sobre-carousel-img active" src="assets/fotos/sobre-1.jpg" alt="Leiana Rodrigues">
-          <img loading="lazy" decoding="async" class="sobre-carousel-img" src="assets/fotos/sobre-2.jpg" alt="Leiana Rodrigues">
-          <img loading="lazy" decoding="async" class="sobre-carousel-img" src="assets/fotos/sobre-3.jpg" alt="Leiana Rodrigues">
-          <img loading="lazy" decoding="async" class="sobre-carousel-img" src="assets/fotos/sobre-4.jpg" alt="Leiana Rodrigues">
-          <img loading="lazy" decoding="async" class="sobre-carousel-img" src="assets/fotos/sobre-5.jpg" alt="Leiana Rodrigues">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M20 7h-3.5l-2-3h-5l-2 3H4a1 1 0 00-1 1v11a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z"/></svg>
+          <span>foto de ensaio ou atendimento</span>
         </div>
         <div class="coren-badge">
           <div class="coren-badge-left">
@@ -482,7 +492,7 @@ footer{background:#080808;padding:5rem 0 0}
   </div>
 </section>
 
-<!-- COMO FUNCIONA -->
+<!-- COMO FUNCIONA — TIMELINE -->
 <section class="como section" id="como">
   <div class="container">
     <span class="tag">Processo</span>
@@ -523,11 +533,11 @@ footer{background:#080808;padding:5rem 0 0}
         </div>
       </div>
       <div class="reveal" style="position:sticky;top:8rem;display:flex;flex-direction:column;gap:1rem">
-        <div class="como-right-foto">
-          <img loading="lazy" decoding="async" src="assets/fotos/procedimentos/proc-6.jpg" alt="Atendimento Leiana Rodrigues">
-          <div class="como-right-overlay"></div>
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(201,169,110,.12);padding:2.5rem;min-height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem">
+          <svg viewBox="0 0 24 24" style="width:36px;height:36px;stroke:rgba(201,169,110,.3);fill:none;stroke-width:1.2"><circle cx="12" cy="12" r="3"/><path d="M20 7h-3.5l-2-3h-5l-2 3H4a1 1 0 00-1 1v11a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z"/></svg>
+          <span style="font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,110,.3);text-align:center">FOTO LEIANA<br>EM ATENDIMENTO</span>
         </div>
-        <div class="como-locais">
+        <div class="como-locais" style="margin-top:0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06);flex-direction:column;align-items:flex-start;gap:1rem">
           <span class="como-locais-lbl">Locais de atendimento</span>
           <div class="como-locais-list">
             <span class="como-local">Domicílio</span>
@@ -548,7 +558,7 @@ footer{background:#080808;padding:5rem 0 0}
       <div class="reveal">
         <div class="leiana-foto-main">
           <div class="leiana-foto-img">
-            <img loading="lazy" decoding="async" src="assets/fotos/sobre-3.jpg" alt="Leiana Rodrigues · Enfermeira Especialista">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M20 7h-3.5l-2-3h-5l-2 3H4a1 1 0 00-1 1v11a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z"/></svg>
           </div>
           <div class="leiana-foto-badge">
             <strong>Lê</strong>
@@ -556,7 +566,7 @@ footer{background:#080808;padding:5rem 0 0}
           </div>
         </div>
         <div class="leiana-foto-second">
-          <img loading="lazy" decoding="async" src="assets/fotos/procedimentos/proc-5.jpg" alt="Atendimento domiciliar">
+          <svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:rgba(130,118,104,.4);fill:none;stroke-width:1.2"><circle cx="12" cy="12" r="3"/><path d="M20 7h-3.5l-2-3h-5l-2 3H4a1 1 0 00-1 1v11a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z"/></svg>
         </div>
       </div>
       <div class="leiana-foto-content reveal">
@@ -588,12 +598,10 @@ footer{background:#080808;padding:5rem 0 0}
       </div>
       <div class="recursos-fotos reveal">
         <div class="r-foto-main">
-          <img loading="lazy" decoding="async" src="assets/fotos/procedimentos/proc-4.jpg" alt="Procedimento especializado">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M20 7h-3.5l-2-3h-5l-2 3H4a1 1 0 00-1 1v11a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z"/></svg>
         </div>
         <div class="r-foto-grid">
-          <div class="r-foto-sm">
-            <img loading="lazy" decoding="async" src="assets/fotos/procedimentos/proc-5.jpg" alt="Atendimento">
-          </div>
+          <div class="r-foto-sm"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M20 7h-3.5l-2-3h-5l-2 3H4a1 1 0 00-1 1v11a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z"/></svg></div>
           <div class="r-foto-accent"><p>"Cada detalhe importa na sua recuperação"</p></div>
         </div>
       </div>
@@ -610,37 +618,21 @@ footer{background:#080808;padding:5rem 0 0}
         <h2 class="headline headline-lg">Veja no <em>Instagram</em></h2>
         <p class="body" style="margin-top:1rem;max-width:420px">Conteúdos educativos sobre pós-operatório, pós-parto e cicatrização.</p>
       </div>
-      <a href="https://www.instagram.com/leianarodrigues_enf/" target="_blank" class="btn btn-dark">Ver perfil completo</a>
+      <a href="https://instagram.com" target="_blank" class="btn btn-dark">Ver perfil completo</a>
     </div>
     <div class="insta-grid reveal">
-      <a class="insta-card" href="https://www.instagram.com/p/DW9yckmChNK/" target="_blank" rel="noopener">
-        <div class="insta-thumb">
-          <div class="insta-play"><svg viewBox="0 0 12 12"><polygon points="3,1 11,6 3,11"/></svg></div>
-          <div class="insta-thumb-lbl">Pós-operatório<br>orientações e cuidados</div>
-        </div>
+      <div class="insta-card">
+        <div class="insta-thumb"><div class="insta-play"><svg viewBox="0 0 12 12"><polygon points="3,1 11,6 3,11"/></svg></div><div class="insta-thumb-lbl">Reels sobre pós-operatório<br>e dicas de recuperação</div></div>
         <div class="insta-foot"><span class="insta-cat">Pós-operatório</span><span class="insta-cta">Ver no Instagram ↗</span></div>
-      </a>
-      <a class="insta-card" href="https://www.instagram.com/reel/DW4zdgiivkq/" target="_blank" rel="noopener">
-        <div class="insta-thumb">
-          <div class="insta-play"><svg viewBox="0 0 12 12"><polygon points="3,1 11,6 3,11"/></svg></div>
-          <div class="insta-thumb-lbl">Cicatrização<br>como acompanhar em casa</div>
-        </div>
-        <div class="insta-foot"><span class="insta-cat">Cicatrização</span><span class="insta-cta">Ver no Instagram ↗</span></div>
-      </a>
-      <a class="insta-card" href="https://www.instagram.com/reel/DXF_uk0DDM9/" target="_blank" rel="noopener">
-        <div class="insta-thumb">
-          <div class="insta-play"><svg viewBox="0 0 12 12"><polygon points="3,1 11,6 3,11"/></svg></div>
-          <div class="insta-thumb-lbl">Laserterapia<br>como funciona na prática</div>
-        </div>
-        <div class="insta-foot"><span class="insta-cat">Laserterapia</span><span class="insta-cta">Ver no Instagram ↗</span></div>
-      </a>
-      <a class="insta-card" href="https://www.instagram.com/reel/DU_vhdKjhkY/" target="_blank" rel="noopener">
-        <div class="insta-thumb">
-          <div class="insta-play"><svg viewBox="0 0 12 12"><polygon points="3,1 11,6 3,11"/></svg></div>
-          <div class="insta-thumb-lbl">Pós-parto<br>o que você precisa saber</div>
-        </div>
+      </div>
+      <div class="insta-card">
+        <div class="insta-thumb"><div class="insta-play"><svg viewBox="0 0 12 12"><polygon points="3,1 11,6 3,11"/></svg></div><div class="insta-thumb-lbl">Conteúdo educativo<br>sobre pós-parto</div></div>
         <div class="insta-foot"><span class="insta-cat">Pós-parto</span><span class="insta-cta">Ver no Instagram ↗</span></div>
-      </a>
+      </div>
+      <div class="insta-card">
+        <div class="insta-thumb"><div class="insta-play"><svg viewBox="0 0 12 12"><polygon points="3,1 11,6 3,11"/></svg></div><div class="insta-thumb-lbl">Laserterapia e<br>Kinesio Taping na prática</div></div>
+        <div class="insta-foot"><span class="insta-cat">Técnicas</span><span class="insta-cta">Ver no Instagram ↗</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -741,7 +733,7 @@ footer{background:#080808;padding:5rem 0 0}
         <div class="footer-logo">Leiana <span>Rodrigues</span></div>
         <p class="footer-tag">Enfermeira especialista em pós-operatório e pós-parto. Cuidado técnico com presença humana em Brasília e região.</p>
         <div class="footer-social">
-          <a href="https://www.instagram.com/leianarodrigues_enf/" target="_blank" class="footer-soc" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="rgba(255,255,255,.35)" stroke="none"/></svg></a>
+          <a href="#" class="footer-soc" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="rgba(255,255,255,.35)" stroke="none"/></svg></a>
           <a href="https://wa.me/5561995289852" target="_blank" class="footer-soc" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
         </div>
       </div>
@@ -803,16 +795,7 @@ footer{background:#080808;padding:5rem 0 0}
   </div>
 </div>
 
-<!-- WA FLUTUANTE -->
-<a class="wa-float" href="https://wa.me/5561995289852" target="_blank" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-</a>
-
 <script>
-// remove o fallback no-js assim que o JS roda
-document.documentElement.classList.remove('no-js')
-const prefersReduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches
-
 function toggleAdmin(){document.getElementById('adminPanel').classList.toggle('open')}
 function setTheme(t){document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('.theme-opt').forEach(b=>b.classList.remove('active'));document.getElementById('btn-'+t).classList.add('active')}
 function toggleCalendar(el){
@@ -833,41 +816,14 @@ function toggleCalendar(el){
 }
 function toggleFaq(el){const item=el.parentElement;const was=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!was)item.classList.add('open')}
 
-// Timeline auto-avança — pausa no hover e respeita reduced-motion
+// Timeline animada
 const steps=document.querySelectorAll('.como-step')
-const comoSection=document.getElementById('como')
-let current=0,timelinePaused=false
-if(!prefersReduced){
-  setInterval(()=>{
-    if(timelinePaused)return
-    steps.forEach(s=>s.classList.remove('active'))
-    current=(current+1)%steps.length
-    steps[current].classList.add('active')
-  },2800)
-  if(comoSection){
-    comoSection.addEventListener('mouseenter',()=>timelinePaused=true)
-    comoSection.addEventListener('mouseleave',()=>timelinePaused=false)
-  }
-}
+let current=0
+setInterval(()=>{steps.forEach(s=>s.classList.remove('active'));current=(current+1)%steps.length;steps[current].classList.add('active')},2200)
 
-// Carrossel do Sobre — só anima se o usuário permitir movimento
-const carouselImgs=document.querySelectorAll('.sobre-carousel-img')
-if(!prefersReduced && carouselImgs.length){
-  let carouselIdx=0
-  setInterval(()=>{
-    carouselImgs[carouselIdx].classList.remove('active')
-    carouselIdx=(carouselIdx+1)%carouselImgs.length
-    carouselImgs[carouselIdx].classList.add('active')
-  },4000)
-}
-
-// Reveal on scroll — com fallback para reduced-motion
-if(prefersReduced){
-  document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))
-}else{
-  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.08})
-  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el))
-}
+// Reveal on scroll
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.08})
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el))
 
 document.addEventListener('click',e=>{const p=document.getElementById('adminPanel');const b=document.querySelector('.admin-btn');if(p.classList.contains('open')&&!p.contains(e.target)&&!b.contains(e.target))p.classList.remove('open')})
 </script>
