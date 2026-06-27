@@ -70,6 +70,7 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(255,255,255,.97)
 .hero-right{background:var(--c-hero);position:relative;overflow:hidden}
 .hero-foto{width:100%;height:100%;position:relative;display:flex;align-items:flex-end}
 .hero-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.hero-mobile-foto{display:none}
 .hero-foto-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.55) 100%);pointer-events:none}
 .hero-stats-bar{position:relative;z-index:2;width:100%;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);border-top:1px solid rgba(201,169,110,.12);padding:1.5rem 2rem;display:flex;justify-content:space-around;align-items:center}
 .h-stat{text-align:center}
@@ -324,7 +325,17 @@ footer{background:#080808;padding:5rem 0 0}
 }
 
 @media(max-width:900px){
-  .hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:2.5rem 1.5rem}
+  /* R04 — hero: foto mobile acima do texto */
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-right{display:none}
+  .hero-mobile-foto{display:block;width:100%;height:56vw;min-height:200px;object-fit:cover;object-position:center 20%}
+  .hero-left{padding:2.5rem 1.5rem}
+  /* R03 — taping s-wide: botão abaixo da descrição */
+  .s-wide{grid-template-columns:1fr;padding:2rem 1.5rem;gap:1.2rem}
+  .s-wide .s-foot{border-top:none;padding-top:0;margin-top:0;justify-content:flex-start}
+  /* R01+R02 — como funciona: colapsar grid e remover sticky */
+  .como-layout{grid-template-columns:1fr!important;gap:2rem!important}
+  .como-right-col{position:static!important}
   .strip-row{grid-template-columns:1fr 1fr}
   .sobre-grid,.servicos-head,.depo-head,.conteudo-head,.faq-layout,.atende-layout,.leiana-foto-grid,.recursos-layout,.footer-top{grid-template-columns:1fr;gap:2rem}
   .servicos-grid,.depo-grid,.cidades-grid{grid-template-columns:1fr}
@@ -359,6 +370,7 @@ footer{background:#080808;padding:5rem 0 0}
 <!-- HERO -->
 <section class="hero" id="inicio">
   <div class="hero-left">
+    <img class="hero-mobile-foto" src="assets/fotos/sobre-2.jpg" alt="Leiana Rodrigues · Enfermeira Especialista">
     <div class="hero-eyebrow"><i></i><span>Enfermeira especialista · COREN-DF 354.413</span></div>
     <h1 class="hero-title">Cuidado técnico<br>que <em>acompanha</em><br>sua recuperação</h1>
     <p class="hero-desc">Pós-operatório e pós-parto com presença qualificada, escuta real e protocolo individualizado. Atendimento domiciliar em Brasília e região.</p>
@@ -496,7 +508,7 @@ footer{background:#080808;padding:5rem 0 0}
   <div class="container">
     <span class="tag">Processo</span>
     <h2 class="headline headline-lg">Como <em>funciona</em></h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:4rem;align-items:start">
+    <div class="como-layout" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:4rem;align-items:start">
       <div class="como-timeline reveal">
         <div class="como-step active" id="step1">
           <div class="como-step-dot"><div class="como-step-dot-inner"></div></div>
@@ -531,7 +543,7 @@ footer{background:#080808;padding:5rem 0 0}
           </div>
         </div>
       </div>
-      <div class="reveal" style="position:sticky;top:8rem;display:flex;flex-direction:column;gap:1rem">
+      <div class="reveal como-right-col" style="position:sticky;top:8rem;display:flex;flex-direction:column;gap:1rem">
         <div class="como-right-foto">
           <img loading="lazy" decoding="async" src="assets/fotos/procedimentos/proc-6.jpg" alt="Atendimento Leiana Rodrigues">
           <div class="como-right-overlay"></div>
